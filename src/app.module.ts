@@ -12,6 +12,7 @@ import { EcologicalAction } from './ecological-action/entities/ecological-action
 import { UserEcologicalActionModule } from './user-ecological-action/user-ecological-action.module';
 import { EcologicalActionQrModule } from './ecological-action-qr/ecological-action-qr.module';
 import { EcologicalActionQr } from './ecological-action-qr/entities/ecological-action-qr.entity';
+import { UserEcologicalAction } from './user-ecological-action/entities/user-ecological-action.entity';
 
 @Module({
   imports: [
@@ -31,7 +32,7 @@ import { EcologicalActionQr } from './ecological-action-qr/entities/ecological-a
           username: dbConfig.username,
           password: dbConfig.password,
           database: dbConfig.name,
-          entities: [User, EcologicalAction, EcologicalActionQr],
+          entities: [User, EcologicalAction, EcologicalActionQr, UserEcologicalAction],
           synchronize: true,
         };
       }

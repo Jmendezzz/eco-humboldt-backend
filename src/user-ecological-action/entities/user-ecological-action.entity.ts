@@ -16,14 +16,8 @@ export class UserEcologicalAction {
     @Column()
     earnedPoints: number;
 
-    @Column()
-    status: 'PENDING' | 'VALIDATED';
-
     @Column({ nullable: true })
     validationToken: string;
-
-    @Column({ type: 'timestamp', nullable: true })
-    validatedAt: Date;
 
     @CreateDateColumn()
     createdAt: Date;
