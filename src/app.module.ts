@@ -13,6 +13,7 @@ import { UserEcologicalActionModule } from './user-ecological-action/user-ecolog
 import { EcologicalActionQrModule } from './ecological-action-qr/ecological-action-qr.module';
 import { EcologicalActionQr } from './ecological-action-qr/entities/ecological-action-qr.entity';
 import { UserEcologicalAction } from './user-ecological-action/entities/user-ecological-action.entity';
+import { LeaderBoardModule } from './leader-board/leader-board.module';
 
 @Module({
   imports: [
@@ -40,7 +41,9 @@ import { UserEcologicalAction } from './user-ecological-action/entities/user-eco
     AuthModule,
     EcologicalActionModule,
     UserEcologicalActionModule,
-    EcologicalActionQrModule],
+    EcologicalActionQrModule,
+    LeaderBoardModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
